@@ -1,3 +1,4 @@
+/* eslint-disable standard/object-curly-even-spacing */
 import Vue from 'vue'
 import Router from 'vue-router'
 

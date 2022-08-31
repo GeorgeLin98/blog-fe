@@ -1,24 +1,24 @@
 <template>
   <div id="app">
     <go-top></go-top>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
-import GoTop from './components/gotop/GoTop.vue'
+import GoTop from "./components/gotop/GoTop.vue";
 
 export default {
-  name: 'App',
-  components:{
-    "go-top": GoTop,
+  name: "App",
+  components: {
+    "go-top": GoTop
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

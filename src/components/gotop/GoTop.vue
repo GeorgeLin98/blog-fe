@@ -1,43 +1,45 @@
 <template>
   <transition>
-    <div @click="toTop" v-show="topShow" class="me-to-top"><i class="el-icon-caret-top"></i></div>
+    <div @click="toTop" v-show="topShow" class="me-to-top">
+      <i class="el-icon-caret-top"></i>
+    </div>
   </transition>
 </template>
 
 <script>
 export default {
-  name: 'GoTop',
-  data(){
-    return{
-      topShow : false 
-    }
+  name: "GoTop",
+  data() {
+    return {
+      topShow: false
+    };
   },
-  methods:{
-    toTop(){
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-        this.topShow = false;
+  methods: {
+    toTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      this.topShow = false;
     },
     needToTop() {
-        let curHeight = document.documentElement.scrollTop || document.body.scrollTop;
+      let curHeight =
+        document.documentElement.scrollTop || document.body.scrollTop;
 
-        if (curHeight > 400) {
-          this.topShow = true;
-        } else {
-          this.topShow = false;
-        }
-
+      if (curHeight > 400) {
+        this.topShow = true;
+      } else {
+        this.topShow = false;
       }
+    }
   },
-  mounted(){
+  mounted() {
     /**
-       * 等到整个视图都渲染完毕
-       */
-       this.$nextTick(function () {
-        window.addEventListener('scroll', this.needToTop);
-      });
+     * 等到整个视图都渲染完毕
+     */
+    this.$nextTick(function() {
+      window.addEventListener("scroll", this.needToTop);
+    });
   }
-}
+};
 </script>
 <style>
 .me-to-top {
@@ -49,8 +51,8 @@ export default {
   height: 40px;
   border-radius: 20px;
   cursor: pointer;
-  transition: .3s;
-  box-shadow: 0 0 6px rgba(0, 0, 0, .12);
+  transition: 0.3s;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
   z-index: 5;
 }
 
