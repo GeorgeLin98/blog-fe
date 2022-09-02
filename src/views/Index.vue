@@ -1,8 +1,13 @@
 <template>
-  <div v-title data-title="码神之路-blog">
+  <div v-title data-title="GeorgeBlog">
     <el-container>
       <el-main class="me-articles">
-        主区域
+        <ArticleItem
+          v-for="article in articles"
+          :key="article.id"
+          v-bind="article"
+        >
+        </ArticleItem>
       </el-main>
 
       <el-aside>
@@ -13,13 +18,52 @@
 </template>
 
 <script>
+import ArticleItem from "@/components/ArticleItem.vue";
 export default {
   name: "Index",
   data() {
-    return {};
+    return {
+      articles: [
+        {
+        id: "1",
+          weight: 1,
+          title: "标题1",
+          commentCounts: 123,
+          viewCounts: 123,
+          summary: "概要11",
+          author: "作者",
+          tags: [{ tagName: "vue" }],
+          createDate: "3333"
+        },
+        {
+          id: "2",
+          weight: 1,
+          title: "标题2",
+          commentCounts: 123,
+          viewCounts: 123,
+          summary: "概要11",
+          author: "作者",
+          tags: [{ tagName: "vue" }],
+          createDate: "111"
+        },
+        {
+          id: "3",
+          weight: 1,
+          title: "标题3",
+          commentCounts: 123,
+          viewCounts: 123,
+          summary: "概要11",
+          author: "作者",
+          tags: [{ tagName: "vue" }],
+          createDate: "222"
+        }
+      ]
+    };
   },
   methods: {},
-  components: {}
+  components: {
+    ArticleItem
+  }
 };
 </script>
 
