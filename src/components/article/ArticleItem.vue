@@ -29,7 +29,7 @@
   </el-card>
 </template>
 <script>
-import { formatTime } from "../utils/time";
+import { formatTime } from "../../utils/time";
 
 export default {
   name: 'ArticleItem',

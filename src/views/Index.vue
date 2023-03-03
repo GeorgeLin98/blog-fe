@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import ArticleItem from "@/components/ArticleItem.vue";
+import ArticleItem from "@/components/article/ArticleItem.vue";
 export default {
   name: "Index",
   data() {
@@ -56,7 +56,106 @@ export default {
           author: "作者",
           tags: [{ tagName: "vue" }],
           createDate: "222"
+        },
+        {
+          id: "3",
+          weight: 1,
+          title: "标题3",
+          commentCounts: 123,
+          viewCounts: 123,
+          summary: "概要11",
+          author: "作者",
+          tags: [{ tagName: "vue" }],
+          createDate: "222"
+        },
+        {
+          id: "3",
+          weight: 1,
+          title: "标题3",
+          commentCounts: 123,
+          viewCounts: 123,
+          summary: "概要11",
+          author: "作者",
+          tags: [{ tagName: "vue" }],
+          createDate: "222"
+        },
+        {
+          id: "3",
+          weight: 1,
+          title: "标题3",
+          commentCounts: 123,
+          viewCounts: 123,
+          summary: "概要11",
+          author: "作者",
+          tags: [{ tagName: "vue" }],
+          createDate: "222"
+        },
+        {
+          id: "3",
+          weight: 1,
+          title: "标题3",
+          commentCounts: 123,
+          viewCounts: 123,
+          summary: "概要11",
+          author: "作者",
+          tags: [{ tagName: "vue" }],
+          createDate: "222"
+        },
+        {
+          id: "3",
+          weight: 1,
+          title: "标题3",
+          commentCounts: 123,
+          viewCounts: 123,
+          summary: "概要11",
+          author: "作者",
+          tags: [{ tagName: "vue" }],
+          createDate: "222"
+        },
+        {
+          id: "3",
+          weight: 1,
+          title: "标题3",
+          commentCounts: 123,
+          viewCounts: 123,
+          summary: "概要11",
+          author: "作者",
+          tags: [{ tagName: "vue" }],
+          createDate: "222"
+        },
+        {
+          id: "3",
+          weight: 1,
+          title: "标题3",
+          commentCounts: 123,
+          viewCounts: 123,
+          summary: "概要11",
+          author: "作者",
+          tags: [{ tagName: "vue" }],
+          createDate: "222"
+        },
+        {
+          id: "3",
+          weight: 1,
+          title: "标题3",
+          commentCounts: 123,
+          viewCounts: 123,
+          summary: "概要11",
+          author: "作者",
+          tags: [{ tagName: "vue" }],
+          createDate: "222"
+        },{
+          id: "3",
+          weight: 1,
+          title: "标题3",
+          commentCounts: 123,
+          viewCounts: 123,
+          summary: "概要11",
+          author: "作者",
+          tags: [{ tagName: "vue" }],
+          createDate: "222"
         }
+
       ]
     };
   },
